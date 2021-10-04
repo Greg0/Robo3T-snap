@@ -1,5 +1,5 @@
-name: robo3t-snap
-version: v1.4.3
+name: robomongo-snap
+version: v1.4.4
 summary: Robo 3T
 base: core20
 
@@ -19,7 +19,7 @@ architectures: [amd64]
 
 apps:
     robo3t-snap:
-        command: bin/desktop-launch $SNAP/bin/robo3t
+        command: bin/robo3t
         plugs: 
           - home
           - x11
@@ -33,6 +33,6 @@ apps:
 parts:
     tarball:
         plugin: dump
-        source: https://github.com/Studio3T/robomongo/releases/download/v1.4.3/robo3t-1.4.3-linux-x86_64-48f7dfd.tar.gz
+        source: https://github.com/Studio3T/robomongo/releases/download/v1.4.4/robo3t-1.4.4-linux-x86_64-e6ac9ec.tar.gz
         stage-packages:
           - libcurl3-gnutls
